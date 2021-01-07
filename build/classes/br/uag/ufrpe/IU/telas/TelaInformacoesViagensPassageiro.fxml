@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uag.ufrpe.IU.controladores.InformacoesViagensPassageiroController">
+   <children>
+      <Label layoutX="27.0" layoutY="144.0" text="Procurar últimas viagens de um passageiro" />
+      <Label layoutX="27.0" layoutY="174.0" text="CPF:" />
+      <Label layoutX="45.0" layoutY="63.0" text="Saber se um passageiro esta na viagem" />
+      <Label layoutX="45.0" layoutY="94.0" text="Código da Viagem:" />
+      <Label layoutX="260.0" layoutY="94.0" text="CPF do passageiro:" />
+      <Label layoutX="173.0" layoutY="23.0" text="Informações Sobre as viagens de um passageiro" />
+      <TextField fx:id="txtCodigo" layoutX="149.0" layoutY="90.0" prefHeight="25.0" prefWidth="91.0" />
+      <TextField fx:id="txtCpf" layoutX="375.0" layoutY="90.0" />
+      <TextField fx:id="txtCpf2" layoutX="66.0" layoutY="170.0" />
+      <TextArea fx:id="txtArea" layoutX="13.0" layoutY="226.0" prefHeight="120.0" prefWidth="576.0" />
+      <Button fx:id="buscarViagens" layoutX="253.0" layoutY="170.0" mnemonicParsing="false" onAction="#ultimasViagens" text="Buscar" />
+      <Button fx:id="estaNaViagem" layoutX="497.0" layoutY="131.0" mnemonicParsing="false" onAction="#estaNaViagem" text="Buscar" />
+   </children>
+</AnchorPane>

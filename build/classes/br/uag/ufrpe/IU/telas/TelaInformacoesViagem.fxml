@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uag.ufrpe.IU.controladores.InformacoesViagemController">
+   <children>
+      <Label layoutX="229.0" layoutY="21.0" text="Informações da Viagem" />
+      <Label layoutX="32.0" layoutY="59.0" text="Digite o código da Viagem:" />
+      <Label layoutX="32.0" layoutY="101.0" text="Quant. IdJovem:" />
+      <Label layoutX="34.0" layoutY="135.0" text="Quant. parcial IdJovem:" />
+      <Label layoutX="32.0" layoutY="166.0" text="Quant. Idoso:" />
+      <Label layoutX="32.0" layoutY="200.0" text="Quant. parcial Idoso:" />
+      <Label layoutX="33.0" layoutY="271.0" text="Quant. poltronas vazias:" />
+      <Label layoutX="37.0" layoutY="306.0" text="Quant. lanche:" />
+      <Label layoutX="32.0" layoutY="231.0" text="Capacidade do Ônibus:" />
+      <TextField fx:id="txtIdJovem" layoutX="199.0" layoutY="97.0" />
+      <TextField fx:id="txtParcialIdJovem" layoutX="199.0" layoutY="131.0" />
+      <TextField fx:id="txtIdoso" layoutX="199.0" layoutY="162.0" />
+      <TextField fx:id="txtParcialIdoso" layoutX="199.0" layoutY="196.0" />
+      <TextField fx:id="txtCapacidadeOnibus" layoutX="199.0" layoutY="227.0" />
+      <TextField fx:id="txtPoltronasVazias" layoutX="199.0" layoutY="267.0" />
+      <TextField fx:id="txtLanche" layoutX="199.0" layoutY="302.0" />
+      <TextField fx:id="txtCodigoViagem" layoutX="189.0" layoutY="55.0" prefHeight="25.0" prefWidth="76.0" />
+      <Button fx:id="buscarInformacoes" layoutX="322.0" layoutY="55.0" mnemonicParsing="false" onAction="#buscarInformacoes" text="Buscar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uag.ufrpe.IU.controladores.GerenteController">
+    <children>
+        <MenuBar layoutX="8.0" layoutY="8.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Viagem">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#cadastrarViagem" text="Cadastrar" />
+                        <MenuItem mnemonicParsing="false" onAction="#procurarViagem" text="Procurar" />
+                        <MenuItem mnemonicParsing="false" onAction="#alterarViagem" text="Alterar" />
+                        <MenuItem mnemonicParsing="false" onAction="#removerViagem" text="Remover" />
+                        <MenuItem mnemonicParsing="false" onAction="#listarViagens" text="Listar Viagens" />
+                        <MenuItem mnemonicParsing="false" onAction="#gerenciarDescontoPassagens" text="Gerenciar Desconto de Passagens" />
+                        <MenuItem mnemonicParsing="false" onAction="#buscarInformacoesPassageiro" text="Informações de Um Passageiro" />
+                        <Menu mnemonicParsing="false" text="Informações estatísicas">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#porcentagemPassageirosViagem" text="Porcentagem de Passageiros" />
+                                <MenuItem mnemonicParsing="false" onAction="#porcentagemLancheViagem" text="Porcentagem de Lanche" />
+                                <MenuItem mnemonicParsing="false" onAction="#lucroViagens" text="Lucro das Viagens" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Dentro da Viagem">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#informacoesViagem" text="Informações da Viagem" />
+                                <MenuItem mnemonicParsing="false" onAction="#venderCancelarPassagem" text="Vender / Cancelar Passagem" />
+                                <MenuItem mnemonicParsing="false" onAction="#listarPassageirosViagem" text="Listar Passageiros" />
+                                <MenuItem mnemonicParsing="false" onAction="#listarPoltronasViagem" text="Listar Poltronas" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Funcionário">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#cadastrarFuncionario" text="Cadastrar" />
+                  <MenuItem mnemonicParsing="false" onAction="#procurarFuncionario" text="Procurar/Alterar" />
+                  <MenuItem mnemonicParsing="false" onAction="#removerFuncionario" text="Remover" />
+                  <MenuItem mnemonicParsing="false" onAction="#listagemFuncionarios" text="Listar Funcionarios" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Passagem">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#listagemPassagens" text="Listagem de Passagens" />
+                  <MenuItem mnemonicParsing="false" onAction="#alterarPassagem" text="Alterar / Remover" />
+                  <MenuItem mnemonicParsing="false" onAction="#cadastrarPassagem" text="Cadastrar" />
+               </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="Passageiro">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#listagemPassageiros" text="Listagem Passageiros" />
+                  <MenuItem mnemonicParsing="false" onAction="#removerPassageiro" text="Remover" />
+                  <MenuItem mnemonicParsing="false" onAction="#procurarPassageiro" text="Procurar/Alterar" />
+                  <MenuItem mnemonicParsing="false" onAction="#cadastrarPassageiro" text="Cadastrar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ônibus">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#cadastrarOnibus" text="Cadastrar" />
+                  <MenuItem mnemonicParsing="false" onAction="#alterarOnibus" text="Alterar / Remover" />
+                  <MenuItem mnemonicParsing="false" onAction="#listagemOnibus" text="Listagem de Ônibus" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Motorista">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#cadastrarMotorista" text="Cadastrar" />
+                  <MenuItem mnemonicParsing="false" onAction="#alterarMotorista" text="Alterar / Procurar" />
+                  <MenuItem mnemonicParsing="false" onAction="#removerMotorista" text="Remover" />
+              </items>
+            </Menu>
+            </menus>
+        </MenuBar>
+        <Pane fx:id="paneTelas" layoutX="2.0" layoutY="34.0" prefHeight="436.0" prefWidth="618.0">
+            <children>
+                <AnchorPane fx:id="paneTelaAtual" prefHeight="436.0" prefWidth="618.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

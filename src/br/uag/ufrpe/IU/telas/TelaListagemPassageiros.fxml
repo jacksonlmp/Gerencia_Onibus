@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.uag.ufrpe.IU.controladores.ListagemPassageirosController">
+   <children>
+      <TableView fx:id="tableViewPassageiros" layoutX="31.0" layoutY="72.0" prefHeight="200.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="colunaNome" prefWidth="277.0" text="Nome" />
+          <TableColumn fx:id="colunaCpf" minWidth="0.0" prefWidth="261.0" text="CPF" />
+        </columns>
+      </TableView>
+      <Text layoutX="230.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listagem Passageiros">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

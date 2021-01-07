@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="733.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.uag.ufrpe.IU.controladores.ListagemOnibusController">
+   <children>
+      <TableView fx:id="tableOnibus" layoutX="39.0" layoutY="84.0" prefHeight="264.0" prefWidth="667.0">
+        <columns>
+          <TableColumn fx:id="colunaCodigo" prefWidth="61.0" text="Código" />
+          <TableColumn fx:id="colunaMotorista" prefWidth="128.0" text="Motorista" />
+            <TableColumn fx:id="colunaPlaca" prefWidth="75.0" text="Placa" />
+            <TableColumn fx:id="colunaTotalPoltronas" prefWidth="73.0" text="Total de Pltronas" />
+            <TableColumn fx:id="colunaConvencional" prefWidth="74.0" text="Convencionais" />
+            <TableColumn fx:id="colunaObeso" prefWidth="72.0" text="Obeso" />
+            <TableColumn fx:id="colunaParcialReclinavel" prefWidth="84.0" text="Parcial Reclináveis" />
+            <TableColumn fx:id="colunaTotalReclinavel" prefWidth="87.0" text="Total Reclináveis" />
+        </columns>
+      </TableView>
+      <Label layoutX="211.0" layoutY="23.0" text="Listagem de Ônibus Cadastrados">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

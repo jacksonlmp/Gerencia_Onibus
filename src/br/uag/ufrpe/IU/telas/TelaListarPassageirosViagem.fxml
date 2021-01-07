@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uag.ufrpe.IU.controladores.ListarPassageirosViagemController">
+    <children>
+        <TableView fx:id="tableViewViagens" layoutX="16.0" layoutY="112.0" prefHeight="293.0" prefWidth="635.0">
+            <columns>
+                <TableColumn fx:id="colunaNome" prefWidth="211.0" text="Nome" />
+                <TableColumn fx:id="colunaCpf" minWidth="0.0" prefWidth="124.0" text="CPF" />
+                <TableColumn fx:id="colunaRg" minWidth="0.0" prefWidth="138.0" text="RG" />
+                <TableColumn fx:id="colunaTelefone" minWidth="0.0" prefWidth="160.0" text="Telefone" />
+            </columns>
+        </TableView>
+        <Label layoutX="210.0" layoutY="14.0" text="Listagem de passageiros na viagem" />
+      <Label layoutX="51.0" layoutY="56.0" text="Código da viagem:" />
+      <TextField fx:id="txtCodigoViagem" layoutX="165.0" layoutY="52.0" prefHeight="25.0" prefWidth="79.0" />
+      <Button layoutX="290.0" layoutY="52.0" onAction="#preencherTabela" mnemonicParsing="false" text="Buscar" />
+    </children>
+</AnchorPane>
